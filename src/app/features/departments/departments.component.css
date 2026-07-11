@@ -266,28 +266,28 @@ Mobile
 @media (max-width:768px){
 
 .departments-section{
-    padding:50px 15px;
-}
-
-.section-title{
-    margin-bottom:40px;
+    padding:50px 10px;
 }
 
 .section-title h2{
-    font-size:32px;
+    font-size:30px;
 }
 
 .section-title p{
     font-size:16px;
 }
 
+/* Keep arrows left and right */
 .department-carousel{
-    flex-direction:column;
-    gap:20px;
+    display:flex;
+    flex-direction:row;
+    align-items:center;
+    justify-content:center;
+    gap:8px;
 }
 
 .department-card{
-    width:100%;
+    width:calc(100% - 100px);
     min-height:auto;
     flex-direction:column;
 }
@@ -298,12 +298,12 @@ Mobile
 }
 
 .image-section{
-    padding:20px;
+    padding:15px;
 }
 
 .doctor-image{
     width:100%;
-    max-width:280px;
+    max-width:250px;
     height:auto;
 }
 
@@ -313,18 +313,12 @@ Mobile
 }
 
 .badge-container{
-    justify-content:center;
     flex-wrap:wrap;
-}
-
-.department-badge,
-.founder-badge{
-    font-size:13px;
-    padding:8px 16px;
+    justify-content:center;
 }
 
 .department-details h2{
-    font-size:28px;
+    font-size:26px;
 }
 
 .department-details h3{
@@ -336,29 +330,21 @@ Mobile
     font-size:16px;
 }
 
-.department-details h4{
-    font-size:18px;
-}
-
 .services{
     font-size:15px;
     line-height:1.6;
     max-width:100%;
 }
 
-.profile-btn{
-    width:100%;
-    max-width:220px;
-    margin:auto;
-}
-
+/* Keep arrows visible */
 .arrow{
-    width:45px;
-    height:45px;
-    font-size:20px;
+    width:42px;
+    height:42px;
+    font-size:18px;
     display:flex;
-    justify-content:center;
     align-items:center;
+    justify-content:center;
+    flex-shrink:0;
 }
 
 }
