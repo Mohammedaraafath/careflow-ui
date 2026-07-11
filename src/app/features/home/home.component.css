@@ -39,7 +39,7 @@ Hero Section
 }
 
 .hero-left h1{
-    font-size:70px;
+    font-size:clamp(36px,6vw,70px);
     line-height:1.1;
     margin-bottom:30px;
     font-weight:800;
@@ -546,65 +546,86 @@ font-size:18px;
 
 }
 
-@media(max-width:768px){
+@media (max-width:768px){
 
-.hero-content h1{
-
-font-size:42px;
-
+.hero{
+    height:auto;
+    min-height:100vh;
 }
 
-.hero-content p{
+.hero-content{
+    flex-direction:column;
+    justify-content:center;
+    padding:40px 20px;
+}
 
-font-size:18px;
+.hero-left{
+    width:100%;
+    text-align:center;
+}
 
+.hero-left h1{
+    font-size:40px;
+    line-height:1.2;
+}
+
+.hero-left p{
+    width:100%;
+    font-size:18px;
+    line-height:1.6;
 }
 
 .hero-buttons{
+    flex-direction:column;
+    align-items:center;
+}
 
-flex-direction:column;
+.primary,
+.secondary{
+    width:100%;
+    max-width:300px;
+}
 
+.appointment-card{
+    position:relative;
+    right:0;
+    top:0;
+    transform:none;
+    width:100%;
+    max-width:350px;
+    margin:30px auto 0;
+}
+
+.department-carousel{
+    flex-direction:column;
+}
+
+.department-card{
+    width:100%;
 }
 
 .arrow{
-
-width:55px;
-
-height:55px;
-
-font-size:26px;
-
+    display:none;
 }
 
 .department-details{
-
-padding:30px;
-
+    padding:20px;
 }
 
 .department-details h2{
-
-font-size:32px;
-
+    font-size:28px;
 }
 
 .department-details h3{
-
-font-size:24px;
-
+    font-size:22px;
 }
 
 .qualification,
 .experience{
-
-font-size:20px;
-
+    font-size:18px;
 }
 
 .services{
-
-font-size:17px;
-
+    font-size:16px;
 }
-
 }
