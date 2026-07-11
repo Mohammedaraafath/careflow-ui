@@ -69,3 +69,33 @@ nav a:hover{
     font-weight:600;
     cursor:pointer;
 }
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px;
+  }
+
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+  }
+
+  .nav-links a {
+    padding: 8px;
+  }
+
+  .login-btn {
+    width: 100%;
+  }
+
+  .navbar {
+    position: relative;
+    height: auto;
+  }
+}
