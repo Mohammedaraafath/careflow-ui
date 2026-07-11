@@ -1,463 +1,610 @@
+/*==========================
+Hero Section
+===========================*/
+
 .hero{
-
-    height:100vh;
-
-    background-image:url('/assets/images/hospital.png');
-
-    background-size:cover;
-
-    background-position:center;
-
     position:relative;
+    margin-top:90px;
+     height:calc(100vh - 90px);
+    background:url('/assets/images/hospital.png') center center/cover no-repeat;
+    overflow:hidden;
 
 }
 
 .overlay{
-
     width:100%;
-
     height:100%;
-
     background:rgba(0,0,0,.45);
-
-    display:flex;
-
-    align-items:center;
-
-    padding-left:8%;
-
+    position:relative;
 }
 
 .hero-content{
-
-    color:white;
-
-    max-width:700px;
-
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+    height:100%;
+    display:flex;
+    align-items:center;
 }
 
-.hero-content h4{
+.hero-left{
+    width:60%;
+    color:#fff;
+}
 
-    color:#90CAF9;
-
+.hero-left h4{
+    color:#65b7ff;
     letter-spacing:3px;
-
     margin-bottom:20px;
+}
+
+.hero-left h1{
+    font-size:70px;
+    line-height:1.1;
+    margin-bottom:30px;
+    font-weight:800;
+}
+
+.hero-left p{
+    width:75%;
+    font-size:24px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.primary,
+.secondary{
+    padding:18px 40px;
+    border:none;
+    border-radius:40px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+.primary{
+    background:#1565C0;
+    color:#fff;
+}
+
+.secondary{
+    background:#fff;
+    color:#1565C0;
+}
+
+/* ===========================
+   Appointment Card
+=========================== */
+
+/* Appointment Card */
+.appointment-card{
+    position:absolute;
+
+    right:70px;
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:360px;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    overflow:hidden;
+
+    box-shadow:0 25px 60px rgba(0,0,0,.22);
+
+    z-index:10;
+}
+
+@keyframes slideIn{
+    from{
+        opacity:0;
+        transform:translateX(40px);
+    }
+    to{
+        opacity:1;
+        transform:translateX(0);
+    }
+}
+
+.appointment-header{
+    background:linear-gradient(135deg,#1565C0,#2D7DE0);
+    padding:32px;
+    color:#fff;
+     padding:22px 24px;
+}
+
+.appointment-header h2{
+      font-size:24px;
+    line-height:1.15;
+    margin:0 0 10px;
+    font-weight:700;
+}
+
+.appointment-header p{
+    margin:0;
+    opacity:.9;
+    font-size:17px;
+}
+
+.contact-item{
+    display:flex;
+    align-items:center;
+    gap:18px;
+
+     padding:16px 22px;
+    border-bottom:1px solid #ececec;
+}
+
+.icon{
+      width:46px;
+    height:58px;
+    border-radius:50%;
+    background:#edf4ff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:26px;
+    flex-shrink:0;
+}
+
+.contact-item h4{
+    font-size:16px;
+    margin:0;
+    color:#183153;
+}
+
+.contact-item p{
+    margin-top:3px;
+    font-size:14px;
+    color:#666;
+}
+
+.call-btn{
+    display:block;
+    margin:25px;
+    padding:16px;
+    text-align:center;
+    text-decoration:none;
+    color:#fff;
+    background:#1565C0;
+    border-radius:40px;
+    font-size:20px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.call-btn:hover{
+    background:#0f4fa0;
+}
+/*==========================
+Departments Section
+===========================*/
+
+.departments-section{
+
+    background:#eef5fc;
+    padding:90px 0;
 
 }
 
-.hero-content h1{
+.section-title{
 
-    font-size:64px;
+    text-align:center;
+    margin-bottom:70px;
 
-    line-height:1.2;
+}
+
+.section-title h2{
+
+    font-size:48px;
+    color:#1565C0;
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    font-size:20px;
+    color:#666;
+
+}
+
+/*==========================
+Carousel
+===========================*/
+
+.department-carousel{
+
+    width:100%;
+    max-width:1800px;
+
+    margin:auto;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:35px;
+
+}
+
+/*==========================
+Doctor Card
+===========================*/
+
+.department-card{
+
+    flex:1;
+
+    width:calc(100% - 180px);
+
+    min-height:620px;
+
+    background:white;
+
+    display:flex;
+
+    overflow:hidden;
+
+    border-radius:30px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/*==========================
+Image
+===========================*/
+
+.image-section{
+
+    width:42%;
+
+    background:#edf4fc;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:40px;
+
+}
+
+.doctor-image{
+
+    width:100%;
+
+    max-width:500px;
+
+    height:560px;
+
+    object-fit:contain;
+
+}
+
+/*==========================
+Details
+===========================*/
+
+.department-details{
+
+    width:58%;
+
+    padding:60px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+}
+
+.badge-container{
+
+    display:flex;
+
+    gap:15px;
 
     margin-bottom:25px;
 
 }
 
-.hero-content p{
-
-    font-size:22px;
-
-    line-height:1.8;
-
-    margin-bottom:40px;
-
-}
-
-.hero-buttons{
-
-    display:flex;
-
-    gap:20px;
-
-}
-
-.primary{
+.department-badge{
 
     background:#1565C0;
 
     color:white;
 
-    border:none;
-
-    padding:18px 35px;
-
-    border-radius:40px;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-}
-
-.secondary{
-
-    background:white;
-
-    color:#1565C0;
-
-    border:none;
-
-    padding:18px 35px;
-
-    border-radius:40px;
-
-    font-size:18px;
-
-    cursor:pointer;
-
-}
-
-.hero-image{
-
-    flex:1;
-
-    display:flex;
-
-    justify-content:center;
-}
-
-.hero-image img{
-
-    width:90%;
-
-    border-radius:20px;
-
-    box-shadow:0 20px 40px rgba(0,0,0,.15);
-}
-
-.why-us{
-    padding:80px 8%;
-    background:#ffffff;
-}
-
-.section-title{
-    text-align:center;
-    margin-bottom:50px;
-}
-
-.section-title h2{
-    font-size:40px;
-    color:#1565C0;
-    margin-bottom:15px;
-}
-
-.section-title p{
-    color:#64748B;
-    max-width:700px;
-    margin:auto;
-    line-height:1.8;
-}
-
-.why-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.why-card{
-    background:#fff;
-    border-radius:16px;
-    padding:30px;
-    box-shadow:0 10px 25px rgba(0,0,0,.08);
-    transition:0.3s;
-    text-align:center;
-}
-
-.why-card:hover{
-    transform:translateY(-8px);
-}
-
-.icon{
-    font-size:50px;
-    margin-bottom:20px;
-}
-
-.why-card h3{
-    margin-bottom:15px;
-    color:#1565C0;
-}
-
-.why-card p{
-    color:#64748B;
-    line-height:1.7;
-}
-
-.specialties{
-    padding:80px 8%;
-    background:#F8FAFC;
-}
-
-.specialty-grid{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-    gap:30px;
-}
-
-.specialty-card{
-    background:white;
-    border-radius:18px;
-    padding:30px;
-    box-shadow:0 8px 20px rgba(0,0,0,.08);
-    transition:0.3s;
-}
-
-.specialty-card:hover{
-    transform:translateY(-8px);
-}
-
-.specialty-icon{
-    font-size:50px;
-    margin-bottom:20px;
-}
-
-.specialty-card h3{
-    color:#1565C0;
-    margin-bottom:20px;
-}
-
-.specialty-card ul{
-    padding-left:20px;
-    color:#475569;
-    line-height:2;
-}
-.statistics{
-    padding:90px 8%;
-    background:linear-gradient(135deg,#1565C0,#1E88E5);
-    color:white;
-}
-
-.statistics .section-title h2{
-    color:white;
-}
-
-.statistics .section-title p{
-    color:#E3F2FD;
-}
-
-.stats-grid{
-
-    margin-top:50px;
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:30px;
-
-}
-
-.stat-card{
-
-    background:rgba(255,255,255,.12);
-
-    border-radius:20px;
-
-    text-align:center;
-
-    padding:35px 20px;
-
-    backdrop-filter:blur(10px);
-
-    transition:.3s;
-
-}
-
-.stat-card:hover{
-
-    transform:translateY(-10px);
-
-    background:rgba(255,255,255,.18);
-
-}
-
-.stat-card h1{
-
-    font-size:48px;
-
-    margin-bottom:10px;
-
-    font-weight:700;
-
-}
-
-.stat-card p{
-
-    font-size:18px;
-
-    color:#F8FAFC;
-
-}
-
-<section class="departments">
-
-  <div class="section-title">
-    <h2>Our Departments</h2>
-    <p>
-      Saravana Hospital offers comprehensive healthcare services across multiple specialties with experienced doctors and modern facilities.
-    </p>
-  </div>
-
-  <div class="department-grid">
-
-    <div class="department-card">
-      <div class="department-icon">🩺</div>
-      <h3>Urology</h3>
-      <p>Advanced diagnosis and treatment for kidney, bladder and urinary tract conditions.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">🤱</div>
-      <h3>Gynaecology</h3>
-      <p>Comprehensive women's healthcare, pregnancy care and maternity services.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">🏥</div>
-      <h3>General Surgery</h3>
-      <p>Modern surgical procedures using minimally invasive and laparoscopic techniques.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">💊</div>
-      <h3>General Medicine</h3>
-      <p>Diagnosis and treatment of common illnesses with preventive healthcare services.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">🩸</div>
-      <h3>Nephrology</h3>
-      <p>Specialized kidney care, dialysis services and chronic kidney disease management.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">🧪</div>
-      <h3>Laboratory</h3>
-      <p>Fully equipped diagnostic laboratory providing accurate and timely test results.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">🩻</div>
-      <h3>Radiology</h3>
-      <p>Digital X-Ray, Ultrasound and advanced imaging services for precise diagnosis.</p>
-      <button>Learn More</button>
-    </div>
-
-    <div class="department-card">
-      <div class="department-icon">💉</div>
-      <h3>Pharmacy</h3>
-      <p>24×7 pharmacy with genuine medicines and professional pharmaceutical care.</p>
-      <button>Learn More</button>
-    </div>
-
-  </div>
-
-</section>
-
-.departments{
-
-    padding:90px 8%;
-
-    background:#ffffff;
-
-}
-
-.department-grid{
-
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
-
-    gap:30px;
-
-    margin-top:50px;
-
-}
-
-.department-card{
-
-    background:white;
-
-    border-radius:20px;
-
-    padding:35px;
-
-    text-align:center;
-
-    box-shadow:0 12px 30px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-}
-
-.department-card:hover{
-
-    transform:translateY(-10px);
-
-    box-shadow:0 18px 40px rgba(21,101,192,.2);
-
-}
-
-.department-icon{
-
-    font-size:60px;
-
-    margin-bottom:20px;
-
-}
-
-.department-card h3{
-
-    color:#1565C0;
-
-    margin-bottom:15px;
-
-    font-size:24px;
-
-}
-
-.department-card p{
-
-    color:#64748B;
-
-    line-height:1.7;
-
-    min-height:90px;
-
-}
-
-.department-card button{
-
-    margin-top:20px;
-
-    border:none;
-
-    background:#1565C0;
-
-    color:white;
-
-    padding:12px 28px;
+    padding:10px 26px;
 
     border-radius:30px;
 
-    cursor:pointer;
-
-    transition:.3s;
+    font-size:16px;
 
     font-weight:600;
 
 }
 
-.department-card button:hover{
+.founder-badge{
 
-    background:#0D47A1;
+    background:#fff5d6;
+
+    color:#8b6500;
+
+    padding:10px 22px;
+
+    border-radius:30px;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+.department-details h2{
+
+    color:#1565C0;
+
+    font-size:52px;
+
+    margin-bottom:15px;
+
+}
+
+.department-details h3{
+
+    font-size:38px;
+
+    color:#333;
+
+    margin-bottom:20px;
+
+    line-height:1.3;
+
+}
+
+.qualification{
+
+    font-size:28px;
+
+    color:#555;
+
+    margin-bottom:18px;
+
+}
+
+.experience{
+
+    font-size:28px;
+
+    color:#2e7d32;
+
+    font-weight:700;
+
+    margin-bottom:25px;
+
+}
+
+.department-details h4{
+
+    color:#1565C0;
+
+    font-size:24px;
+
+    margin-bottom:15px;
+
+}
+
+.services{
+
+    color:#555;
+
+    line-height:2;
+
+    font-size:22px;
+
+    max-width:95%;
+
+    margin-bottom:40px;
+
+}
+
+/*==========================
+Button
+===========================*/
+
+.profile-btn{
+
+    width:240px;
+
+    height:60px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#1565C0;
+
+    color:white;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.profile-btn:hover{
+
+    background:#0d47a1;
+
+}
+
+/*==========================
+Arrow
+===========================*/
+
+.arrow{
+
+    width:70px;
+
+    height:70px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#1565C0;
+
+    color:white;
+
+    font-size:34px;
+
+    cursor:pointer;
+
+    box-shadow:0 12px 25px rgba(0,0,0,.20);
+
+    transition:.3s;
+
+    flex-shrink:0;
+
+}
+
+.arrow:hover{
+
+    background:#0d47a1;
+
+    transform:scale(1.08);
+
+}
+
+/*==========================
+Responsive
+===========================*/
+
+@media(max-width:1200px){
+
+.department-card{
+
+flex-direction:column;
+
+width:95%;
+
+}
+
+.image-section,
+.department-details{
+
+width:100%;
+
+}
+
+.doctor-image{
+
+height:420px;
+
+}
+
+.department-details{
+
+padding:40px;
+
+}
+
+.department-details h2{
+
+font-size:38px;
+
+}
+
+.department-details h3{
+
+font-size:28px;
+
+}
+
+.services{
+
+font-size:18px;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+
+font-size:42px;
+
+}
+
+.hero-content p{
+
+font-size:18px;
+
+}
+
+.hero-buttons{
+
+flex-direction:column;
+
+}
+
+.arrow{
+
+width:55px;
+
+height:55px;
+
+font-size:26px;
+
+}
+
+.department-details{
+
+padding:30px;
+
+}
+
+.department-details h2{
+
+font-size:32px;
+
+}
+
+.department-details h3{
+
+font-size:24px;
+
+}
+
+.qualification,
+.experience{
+
+font-size:20px;
+
+}
+
+.services{
+
+font-size:17px;
+
+}
 
 }

@@ -1,97 +1,71 @@
 .navbar{
-    position:fixed;
-    top:0;
-    left:0;
-    width:100%;
-    background:white;
-    box-shadow:0 2px 15px rgba(0,0,0,.08);
-    z-index:1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+    background: #fff;
+    box-shadow: 0 2px 15px rgba(0,0,0,.08);
+    z-index: 1000;
 }
 
 .container{
     width:90%;
     max-width:1400px;
+    height:100%;
     margin:auto;
 
     display:flex;
     justify-content:space-between;
     align-items:center;
-
-    padding:15px 0;
 }
 
 .logo{
-
     display:flex;
     align-items:center;
     gap:15px;
-
 }
 
 .logo img{
-
-    width:100px;
-    height:100px;
+    width:60px;
+    height:60px;
     object-fit:contain;
-
 }
 
 .logo h2{
-
+    font-size:22px;
     color:#1565C0;
-    font-size:24px;
-
+    margin:0;
 }
 
 .logo span{
-
-    color:#64748B;
     font-size:13px;
-
+    color:#64748B;
 }
 
 nav{
-
     display:flex;
     align-items:center;
-    gap:30px;
-
+    gap:32px;
 }
 
 nav a{
-
-    font-weight:500;
     color:#334155;
+    font-size:17px;
+    font-weight:500;
     transition:.3s;
-
 }
 
 nav a:hover{
-
     color:#1565C0;
-
 }
 
 .login-btn{
-
-    padding:12px 24px;
-
+    padding:12px 28px;
     border:none;
-
-    border-radius:30px;
-
+    border-radius:35px;
     background:#1565C0;
-
-    color:white;
-
+    color:#fff;
     font-weight:600;
-
-    transition:.3s;
-
-}
-
-.login-btn:hover{
-
-    background:#0d4d91;
-
+    cursor:pointer;
 }
