@@ -34,12 +34,109 @@
 <!--  </div>-->
 
 <!--</section>-->
+
+
+
+<!--<section id="home" class="hero">-->
+
+<!--  <div class="overlay">-->
+
+<!--    <div class="hero-content">-->
+
+<!--      <div class="hero-left">-->
+
+<!--        <h4>WELCOME TO SARAVANA HOSPITAL</h4>-->
+
+<!--        <h1>-->
+<!--          Advanced Urology &-->
+<!--          <br>-->
+<!--          Multi-Speciality Care-->
+<!--        </h1>-->
+
+<!--        <p>-->
+<!--          We provide world-class healthcare with experienced doctors,-->
+<!--          advanced technology and compassionate patient care.-->
+<!--        </p>-->
+
+<!--        <div class="hero-buttons">-->
+
+<!--          <button-->
+<!--            class="primary"-->
+<!--            (click)="showAppointment = !showAppointment">-->
+<!--            Book Appointment-->
+<!--          </button>-->
+
+<!--          <button class="secondary">-->
+<!--            Emergency 24×7-->
+<!--          </button>-->
+
+<!--        </div>-->
+
+<!--      </div>-->
+
+<!--    </div>-->
+
+<!--    &lt;!&ndash; Appointment Card &ndash;&gt;-->
+<!--    @if(showAppointment){-->
+
+<!--    <div class="appointment-card">-->
+
+<!--      <div class="appointment-header">-->
+<!--        <h2>Book an Appointment</h2>-->
+<!--        <p>We're here to help you 24×7</p>-->
+<!--      </div>-->
+
+<!--      <div class="contact-item">-->
+<!--        <div class="icon">📞</div>-->
+<!--        <div>-->
+<!--          <h4>Reception</h4>-->
+<!--          <p>+91 98765 43210</p>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="contact-item">-->
+<!--        <div class="icon">☎</div>-->
+<!--        <div>-->
+<!--          <h4>Appointment Desk</h4>-->
+<!--          <p>+91 98765 43211</p>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="contact-item">-->
+<!--        <div class="icon">🚑</div>-->
+<!--        <div>-->
+<!--          <h4>Emergency</h4>-->
+<!--          <p>+91 98765 43212</p>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <div class="contact-item">-->
+<!--        <div class="icon">✉</div>-->
+<!--        <div>-->
+<!--          <h4>Email</h4>-->
+<!--          <p>info@saravanahospital.com</p>-->
+<!--        </div>-->
+<!--      </div>-->
+
+<!--      <a href="tel:+919876543210" class="call-btn">-->
+<!--        Call Now-->
+<!--      </a>-->
+
+<!--    </div>-->
+
+<!--    }-->
+
+<!--  </div>-->
+
+<!--</section>-->
+
 <section id="home" class="hero">
 
   <div class="overlay">
 
     <div class="hero-content">
 
+      <!-- Left Content -->
       <div class="hero-left">
 
         <h4>WELCOME TO SARAVANA HOSPITAL</h4>
@@ -71,57 +168,57 @@
 
       </div>
 
+      <!-- Right Appointment Card -->
+      @if(showAppointment){
+
+      <div class="appointment-card">
+
+        <div class="appointment-header">
+          <h2>Book an Appointment</h2>
+          <p>We're here to help you 24×7</p>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">📞</div>
+          <div>
+            <h4>Reception</h4>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">☎</div>
+          <div>
+            <h4>Appointment Desk</h4>
+            <p>+91 98765 43211</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">🚑</div>
+          <div>
+            <h4>Emergency</h4>
+            <p>+91 98765 43212</p>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="icon">✉</div>
+          <div>
+            <h4>Email</h4>
+            <p>info@saravanahospital.com</p>
+          </div>
+        </div>
+
+        <a href="tel:+919876543210" class="call-btn">
+          Call Now
+        </a>
+
+      </div>
+
+      }
+
     </div>
-
-    <!-- Appointment Card -->
-    @if(showAppointment){
-
-    <div class="appointment-card">
-
-      <div class="appointment-header">
-        <h2>Book an Appointment</h2>
-        <p>We're here to help you 24×7</p>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon">📞</div>
-        <div>
-          <h4>Reception</h4>
-          <p>+91 98765 43210</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon">☎</div>
-        <div>
-          <h4>Appointment Desk</h4>
-          <p>+91 98765 43211</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon">🚑</div>
-        <div>
-          <h4>Emergency</h4>
-          <p>+91 98765 43212</p>
-        </div>
-      </div>
-
-      <div class="contact-item">
-        <div class="icon">✉</div>
-        <div>
-          <h4>Email</h4>
-          <p>info@saravanahospital.com</p>
-        </div>
-      </div>
-
-      <a href="tel:+919876543210" class="call-btn">
-        Call Now
-      </a>
-
-    </div>
-
-    }
 
   </div>
 
@@ -212,156 +309,3 @@
 
 
 
-<!--<section id="about" class="why-us">-->
-
-<!--  <div class="section-title">-->
-<!--    <h2>Why Choose Saravana Hospital?</h2>-->
-<!--    <p>-->
-<!--      Providing compassionate, advanced, and affordable healthcare with experienced specialists and modern technology.-->
-<!--    </p>-->
-<!--  </div>-->
-
-<!--  <div class="why-grid">-->
-
-<!--    <div class="why-card">-->
-<!--      <div class="icon">👨‍⚕️</div>-->
-<!--      <h3>Experienced Doctors</h3>-->
-<!--      <p>Highly qualified specialists with years of clinical experience.</p>-->
-<!--    </div>-->
-
-<!--    <div class="why-card">-->
-<!--      <div class="icon">🏥</div>-->
-<!--      <h3>Advanced Technology</h3>-->
-<!--      <p>Modern diagnostic equipment and minimally invasive treatments.</p>-->
-<!--    </div>-->
-
-<!--    <div class="why-card">-->
-<!--      <div class="icon">🚑</div>-->
-<!--      <h3>24×7 Emergency</h3>-->
-<!--      <p>Emergency medical care available around the clock.</p>-->
-<!--    </div>-->
-
-<!--    <div class="why-card">-->
-<!--      <div class="icon">📋</div>-->
-<!--      <h3>Digital Records</h3>-->
-<!--      <p>Secure electronic medical records for faster patient care.</p>-->
-<!--    </div>-->
-
-<!--    <div class="why-card">-->
-<!--      <div class="icon">💙</div>-->
-<!--      <h3>Patient First</h3>-->
-<!--      <p>Every treatment plan is personalized for each patient.</p>-->
-<!--    </div>-->
-
-<!--    <div class="why-card">-->
-<!--      <div class="icon">💰</div>-->
-<!--      <h3>Affordable Care</h3>-->
-<!--      <p>Quality healthcare services at reasonable prices.</p>-->
-<!--    </div>-->
-
-<!--  </div>-->
-
-<!--</section>-->
-
-<!--<section class="specialties">-->
-
-<!--  <div class="section-title">-->
-<!--    <h2>Our Key Specialties</h2>-->
-<!--    <p>-->
-<!--      Comprehensive healthcare services delivered by experienced specialists using modern medical technology.-->
-<!--    </p>-->
-<!--  </div>-->
-
-<!--  <div class="specialty-grid">-->
-
-<!--    <div class="specialty-card">-->
-<!--      <div class="specialty-icon">🩺</div>-->
-<!--      <h3>Urology</h3>-->
-<!--      <ul>-->
-<!--        <li>Laser Kidney Stone Treatment</li>-->
-<!--        <li>Shockwave Lithotripsy</li>-->
-<!--        <li>Flexible Ureteroscopy</li>-->
-<!--        <li>PCNL Surgery</li>-->
-<!--      </ul>-->
-<!--    </div>-->
-
-<!--    <div class="specialty-card">-->
-<!--      <div class="specialty-icon">🤱</div>-->
-<!--      <h3>Gynaecology</h3>-->
-<!--      <ul>-->
-<!--        <li>Pregnancy Care</li>-->
-<!--        <li>Mother & Child Care</li>-->
-<!--        <li>High Risk Pregnancy</li>-->
-<!--        <li>Women's Health</li>-->
-<!--      </ul>-->
-<!--    </div>-->
-
-<!--    <div class="specialty-card">-->
-<!--      <div class="specialty-icon">🏥</div>-->
-<!--      <h3>General Surgery</h3>-->
-<!--      <ul>-->
-<!--        <li>Laparoscopic Surgery</li>-->
-<!--        <li>Minimally Invasive Procedures</li>-->
-<!--        <li>Advanced Diagnostics</li>-->
-<!--        <li>Post-operative Care</li>-->
-<!--      </ul>-->
-<!--    </div>-->
-
-<!--    <div class="specialty-card">-->
-<!--      <div class="specialty-icon">💊</div>-->
-<!--      <h3>General Medicine</h3>-->
-<!--      <ul>-->
-<!--        <li>Diabetes Care</li>-->
-<!--        <li>Hypertension Treatment</li>-->
-<!--        <li>Health Check-ups</li>-->
-<!--        <li>Preventive Care</li>-->
-<!--      </ul>-->
-<!--    </div>-->
-
-<!--  </div>-->
-
-<!--</section>-->
-
-<!--<section class="statistics">-->
-
-<!--  <div class="section-title">-->
-<!--    <h2>Trusted by Thousands of Patients</h2>-->
-<!--    <p>-->
-<!--      For over two decades, Saravana Hospital has been committed to delivering-->
-<!--      exceptional healthcare with compassion and excellence.-->
-<!--    </p>-->
-<!--  </div>-->
-
-<!--  <div class="stats-grid">-->
-
-<!--    <div class="stat-card">-->
-<!--      <h1>25+</h1>-->
-<!--      <p>Years of Excellence</p>-->
-<!--    </div>-->
-
-<!--    <div class="stat-card">-->
-<!--      <h1>50+</h1>-->
-<!--      <p>Expert Doctors</p>-->
-<!--    </div>-->
-
-<!--    <div class="stat-card">-->
-<!--      <h1>1000+</h1>-->
-<!--      <p>Happy Patients</p>-->
-<!--    </div>-->
-
-<!--    <div class="stat-card">-->
-<!--      <h1>15+</h1>-->
-<!--      <p>Medical Departments</p>-->
-<!--    </div>-->
-
-<!--    <div class="stat-card">-->
-<!--      <h1>5000+</h1>-->
-<!--      <p>Appointments</p>-->
-<!--    </div>-->
-
-<!--    <div class="stat-card">-->
-<!--      <h1>24×7</h1>-->
-<!--      <p>Emergency Care</p>-->
-<!--    </div>-->
-
-<!--  </div>-->
