@@ -353,7 +353,12 @@ Mobile
 }
 
 .arrow{
-    display:none;
+    width:45px;
+    height:45px;
+    font-size:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
 
 }
