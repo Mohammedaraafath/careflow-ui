@@ -7,7 +7,10 @@ import { Component } from '@angular/core';
   styleUrl: './home.component.css',
 })
 export class HomeComponent {
-
+showContact = false;
 showAppointment = false;
+bookNow() {
+  window.open('https://www.airbnb.com/', '_blank');
+}
 
   }

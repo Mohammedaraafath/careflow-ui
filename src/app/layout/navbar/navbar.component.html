@@ -1,64 +1,64 @@
 <!--<header class="navbar">-->
-
 <!--  <div class="container">-->
 
 <!--    <div class="logo">-->
-
-<!--      <img src="/assets/logo/hospital-logo.jpeg" alt="Saravana Hospital">-->
+<!--      <img src="/assets/logo/hospital-logo.jpeg" alt="Hospital">-->
 <!--      <div>-->
 <!--        <h2>Saravana Hospital</h2>-->
 <!--        <span>Advanced Urology & Multi-Speciality Care</span>-->
 <!--      </div>-->
-
 <!--    </div>-->
 
-<!--    <nav class="nav-links">-->
+<!--    <div class="menu-toggle" (click)="toggleMenu()">-->
+<!--      ☰-->
+<!--    </div>-->
 
-
-<!--      <a href="#home">Home</a>-->
-
-<!--      <a href="#about">About</a>-->
-
-<!--      <a href="#departments">Departments</a>-->
-
-<!--      <a href="#contact">Contact</a>-->
+<!--    <nav [class.active]="menuOpen">-->
+<!--      <a href="#home" (click)="closeMenu()">Home</a>-->
+<!--      <a href="#about" (click)="closeMenu()">About</a>-->
+<!--      <a href="#departments" (click)="closeMenu()">Departments</a>-->
+<!--      <a href="#contact" (click)="closeMenu()">Contact</a>-->
 
 <!--      <button class="login-btn">-->
 <!--        Staff Login-->
 <!--      </button>-->
-
 <!--    </nav>-->
 
-
-
 <!--  </div>-->
-
 <!--</header>-->
 
 <header class="navbar">
   <div class="container">
 
+    <!-- Logo -->
     <div class="logo">
-      <img src="/assets/logo/hospital-logo.jpeg" alt="Hospital">
+      <img src="/assets/images/homestay-logo.jpg" alt="Homestay Logo">
       <div>
-        <h2>Saravana Hospital</h2>
-        <span>Advanced Urology & Multi-Speciality Care</span>
+        <h2>Green Valley Homestay</h2>
+        <span>Relax • Stay • Explore</span>
       </div>
     </div>
 
+    <!-- Mobile Menu -->
     <div class="menu-toggle" (click)="toggleMenu()">
       ☰
     </div>
 
+    <!-- Navigation -->
     <nav [class.active]="menuOpen">
+
       <a href="#home" (click)="closeMenu()">Home</a>
-      <a href="#about" (click)="closeMenu()">About</a>
-      <a href="#departments" (click)="closeMenu()">Departments</a>
+
+      <a href="#rooms" (click)="closeMenu()">Rooms</a>
+
+      <a href="#gallery" (click)="closeMenu()">Gallery</a>
+
       <a href="#contact" (click)="closeMenu()">Contact</a>
 
-      <button class="login-btn">
-        Staff Login
+      <button class="login-btn" (click)="bookNow()">
+        Book Now
       </button>
+
     </nav>
 
   </div>

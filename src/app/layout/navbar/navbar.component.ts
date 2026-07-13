@@ -28,4 +28,8 @@ export class NavbarComponent {
     this.menuOpen = false;
   }
 
+bookNow() {
+  window.open('https://www.airbnb.com/', '_blank');
+}
+
 }

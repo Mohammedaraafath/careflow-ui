@@ -4,45 +4,7 @@
 
 <!--    <div class="hero-content">-->
 
-<!--      <h4>WELCOME TO SARAVANA HOSPITAL</h4>-->
-
-<!--      <h1>-->
-<!--        Advanced Urology &-->
-<!--        <br>-->
-<!--        Multi-Speciality Care-->
-<!--      </h1>-->
-
-<!--      <p>-->
-<!--        We provide world-class healthcare with experienced doctors,-->
-<!--        advanced technology and compassionate patient care.-->
-<!--      </p>-->
-
-<!--      <div class="hero-buttons">-->
-
-<!--        <button class="primary">-->
-<!--          Book Appointment-->
-<!--        </button>-->
-
-<!--        <button class="secondary">-->
-<!--          Emergency 24×7-->
-<!--        </button>-->
-
-<!--      </div>-->
-
-<!--    </div>-->
-
-<!--  </div>-->
-
-<!--</section>-->
-
-
-
-<!--<section id="home" class="hero">-->
-
-<!--  <div class="overlay">-->
-
-<!--    <div class="hero-content">-->
-
+<!--      &lt;!&ndash; Left Content &ndash;&gt;-->
 <!--      <div class="hero-left">-->
 
 <!--        <h4>WELCOME TO SARAVANA HOSPITAL</h4>-->
@@ -74,61 +36,63 @@
 
 <!--      </div>-->
 
+<!--      &lt;!&ndash; Right Appointment Card &ndash;&gt;-->
+<!--      @if(showAppointment){-->
+
+<!--      <div class="appointment-card">-->
+
+<!--        <div class="appointment-header">-->
+<!--          <h2>Book an Appointment</h2>-->
+<!--          <p>We're here to help you 24×7</p>-->
+<!--        </div>-->
+
+<!--        <div class="contact-item">-->
+<!--          <div class="icon">📞</div>-->
+<!--          <div>-->
+<!--            <h4>Reception</h4>-->
+<!--            <p>+91 98765 43210</p>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="contact-item">-->
+<!--          <div class="icon">☎</div>-->
+<!--          <div>-->
+<!--            <h4>Appointment Desk</h4>-->
+<!--            <p>+91 98765 43211</p>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="contact-item">-->
+<!--          <div class="icon">🚑</div>-->
+<!--          <div>-->
+<!--            <h4>Emergency</h4>-->
+<!--            <p>+91 98765 43212</p>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <div class="contact-item">-->
+<!--          <div class="icon">✉</div>-->
+<!--          <div>-->
+<!--            <h4>Email</h4>-->
+<!--            <p>info@saravanahospital.com</p>-->
+<!--          </div>-->
+<!--        </div>-->
+
+<!--        <a href="tel:+919876543210" class="call-btn">-->
+<!--          Call Now-->
+<!--        </a>-->
+
+<!--      </div>-->
+
+<!--      }-->
+
 <!--    </div>-->
-
-<!--    &lt;!&ndash; Appointment Card &ndash;&gt;-->
-<!--    @if(showAppointment){-->
-
-<!--    <div class="appointment-card">-->
-
-<!--      <div class="appointment-header">-->
-<!--        <h2>Book an Appointment</h2>-->
-<!--        <p>We're here to help you 24×7</p>-->
-<!--      </div>-->
-
-<!--      <div class="contact-item">-->
-<!--        <div class="icon">📞</div>-->
-<!--        <div>-->
-<!--          <h4>Reception</h4>-->
-<!--          <p>+91 98765 43210</p>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="contact-item">-->
-<!--        <div class="icon">☎</div>-->
-<!--        <div>-->
-<!--          <h4>Appointment Desk</h4>-->
-<!--          <p>+91 98765 43211</p>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="contact-item">-->
-<!--        <div class="icon">🚑</div>-->
-<!--        <div>-->
-<!--          <h4>Emergency</h4>-->
-<!--          <p>+91 98765 43212</p>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <div class="contact-item">-->
-<!--        <div class="icon">✉</div>-->
-<!--        <div>-->
-<!--          <h4>Email</h4>-->
-<!--          <p>info@saravanahospital.com</p>-->
-<!--        </div>-->
-<!--      </div>-->
-
-<!--      <a href="tel:+919876543210" class="call-btn">-->
-<!--        Call Now-->
-<!--      </a>-->
-
-<!--    </div>-->
-
-<!--    }-->
 
 <!--  </div>-->
 
 <!--</section>-->
+
+
 
 <section id="home" class="hero">
 
@@ -139,79 +103,60 @@
       <!-- Left Content -->
       <div class="hero-left">
 
-        <h4>WELCOME TO SARAVANA HOSPITAL</h4>
+        <h4>WELCOME TO GREEN VALLEY HOMESTAY</h4>
 
         <h1>
-          Advanced Urology &
+          Relax, Stay &
           <br>
-          Multi-Speciality Care
+          Enjoy Nature
         </h1>
 
         <p>
-          We provide world-class healthcare with experienced doctors,
-          advanced technology and compassionate patient care.
+          Experience a peaceful stay with comfortable rooms,
+          beautiful surroundings, and unforgettable hospitality.
         </p>
 
         <div class="hero-buttons">
 
           <button
             class="primary"
-            (click)="showAppointment = !showAppointment">
-            Book Appointment
+            (click)="bookNow()">
+            Book Now
           </button>
 
-          <button class="secondary">
-            Emergency 24×7
+          <button
+            class="secondary"
+            (click)="showContact = !showContact">
+            Contact Us
           </button>
 
         </div>
 
       </div>
 
-      <!-- Right Appointment Card -->
-      @if(showAppointment){
+      @if(showContact){
 
-      <div class="appointment-card">
+      <div class="contact-card">
 
-        <div class="appointment-header">
-          <h2>Book an Appointment</h2>
-          <p>We're here to help you 24×7</p>
+        <h2>Contact Us</h2>
+
+        <div class="contact-item">
+          📞 +91 9876543210
         </div>
 
         <div class="contact-item">
-          <div class="icon">📞</div>
-          <div>
-            <h4>Reception</h4>
-            <p>+91 98765 43210</p>
-          </div>
+          📧 info@greenvalleyhomestay.com
         </div>
 
         <div class="contact-item">
-          <div class="icon">☎</div>
-          <div>
-            <h4>Appointment Desk</h4>
-            <p>+91 98765 43211</p>
-          </div>
+          📍 Ooty, Tamil Nadu
         </div>
 
-        <div class="contact-item">
-          <div class="icon">🚑</div>
-          <div>
-            <h4>Emergency</h4>
-            <p>+91 98765 43212</p>
-          </div>
-        </div>
-
-        <div class="contact-item">
-          <div class="icon">✉</div>
-          <div>
-            <h4>Email</h4>
-            <p>info@saravanahospital.com</p>
-          </div>
-        </div>
-
-        <a href="tel:+919876543210" class="call-btn">
-          Call Now
+        <a
+          href="https://wa.me/919876543210"
+          target="_blank"
+          class="call-btn">
+          WhatsApp Us
         </a>
 
       </div>
@@ -223,6 +168,3 @@
   </div>
 
 </section>
-
-
-

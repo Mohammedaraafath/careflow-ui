@@ -6,17 +6,24 @@ import { FooterComponent } from './layout/footer/footer.component';
 
 import { HomeComponent } from './features/home/home.component';
 import { DepartmentsComponent } from './features/departments/departments.component';
+import { RoomsComponent } from './features/rooms/rooms.component';
+import { GalleryComponent } from './features/gallery/gallery.component';
+import { ContactComponent } from './features/contact/contact.component';
+
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [
-    RouterOutlet,
-    NavbarComponent,
-    HomeComponent,
-    DepartmentsComponent,
-    FooterComponent
-  ],
+imports: [
+  RouterOutlet,
+  NavbarComponent,
+  HomeComponent,
+  RoomsComponent,
+  GalleryComponent,
+  ContactComponent,
+  FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
